@@ -8,7 +8,7 @@ metadata:
   annotations:
     {{- toYaml . | nindent 4 }}
   {{- end }}
-  name: {{ include "node-specific-sizing.fullname" . }}-clusterrole
+  name: {{ include "node-specific-sizing.fullname" . }}
 rules:
   - apiGroups:
       - ""
